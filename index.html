@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Appearance Changer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+    <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold mb-4">Dynamic Appearance Changer</h1>
+        <div class="flex justify-center items-center space-x-4">
+            <button id="bgColorBtn" class="px-4 py-2 bg-gray-200 border rounded">Change Background Color</button>
+            <div class="flex items-center space-x-2">
+                <label for="fontSize" class="text-lg">Font Size:</label>
+                <input type="range" id="fontSize" min="12" max="36" value="16" class="w-32">
+            </div>
+            <button id="darkModeBtn" class="px-4 py-2 bg-gray-200 border rounded">Toggle Dark Mode</button>
+            <button id="fontStyleBtn" class="px-4 py-2 bg-gray-200 border rounded">Toggle Font Style</button>
+        </div>
+    </div>
+    <div id="content" class="text-lg">
+        <p>Contoh pengerjaan tugas javascript.</p>
+        <p>fitur yang dimiliki adalah 4, merubah size font, font type, dark mode dan ganti background.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
